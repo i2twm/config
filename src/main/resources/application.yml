@@ -5,10 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/i2twmx/config-repo
+          uri: https://github.com/i2twm/config-repo.git
           username: i2twmx@gmail.com
           password: Aa131416
-          basedir: C:\ideawork\config\basedir
 eureka:
   client:
     service-url:
@@ -16,3 +15,8 @@ eureka:
 
 server:
   port: 8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
